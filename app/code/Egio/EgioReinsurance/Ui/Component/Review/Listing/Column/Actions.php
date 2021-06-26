@@ -58,10 +58,49 @@ class Actions extends Column
                     'label' => __('Edit'),
                     'hidden' => false,
                     '__disableTmpl' => true
-                ];
+
+                   ];
+
+                   $item[$this->getData('name')]['view'] = [
+                                    'href' => $this->urlBuilder->getUrl(
+                                        'md_cr/index/view',
+                                        ['id' => $item['reassurance_id'], 'store' => $storeId]
+                                        
+                                    ),
+                                    'label' => __('view'),
+                                    'hidden' => false,
+                                    '__disableTmpl' => true
+                                ];
+                   
             }
         }
 
         return $dataSource;
+
+        
     }
+
+
+
+    // public function prepareDataSourceview(array $dataSource)
+    // {
+    //     if (isset($dataSource['data']['items'])) {
+    //         $storeId = $this->context->getFilterParam('store_id');
+
+    //         foreach ($dataSource['data']['items'] as &$item) {
+    //             $item[$this->getData('name')]['view'] = [
+    //                 'href' => $this->urlBuilder->getUrl(
+    //                     'md_cr/index/view',
+    //                     ['id' => $item['reassurance_id'], 'store' => $storeId]
+                        
+    //                 ),
+    //                 'label' => __('view'),
+    //                 'hidden' => false,
+    //                 '__disableTmpl' => true
+    //             ];
+    //         }
+    //     }
+
+    //     return $dataSource;
+    // }
 }
