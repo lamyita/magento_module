@@ -65,7 +65,7 @@ class Form extends \Magento\Backend\Block\Widget\Form\Generic
                 'title' => __('Customer Libelle'),
                 'class' => 'required-entry',
                 'required' => true,
-                'disabled' => $model ? true : false,
+                // 'disabled' => $model ? true : false,
             ]
         );
         $fieldset->addField(
@@ -77,7 +77,7 @@ class Form extends \Magento\Backend\Block\Widget\Form\Generic
                 'title' => __('Description'),
                 'class' => 'required-entry',
                 'required' => true,
-                'disabled' => $model ? true : false,
+                // 'disabled' => $model ? true : false,
             ]
         );
         $fieldset->addField(
@@ -88,7 +88,7 @@ class Form extends \Magento\Backend\Block\Widget\Form\Generic
                 'label' => __('Alt'),
                 'title' => __('Alt'),
                 'required' => false,
-                'disabled' => $model ? true : false,
+                // 'disabled' => $model ? true : false,
             ]
         );
         $fieldset->addField(
@@ -100,7 +100,7 @@ class Form extends \Magento\Backend\Block\Widget\Form\Generic
                 'title' => __('Statut'),
                 'class' => 'required-entry',
                 'required' => true,
-                'disabled' => $model ? true : false,
+                // 'disabled' => $model ? true : false,
             ]
         );
 
@@ -139,7 +139,7 @@ class Form extends \Magento\Backend\Block\Widget\Form\Generic
                 'label' => __('Lien'),
                 'title' => __('Lien'),
                 'required' => false,
-                'disabled' => $model ? true : false,
+                // 'disabled' => $model ? true : false,
             ]
         );
 
@@ -152,7 +152,7 @@ class Form extends \Magento\Backend\Block\Widget\Form\Generic
                 'title' => __('Title_du_lien'),
                 'class' => 'required-entry',
                 'required' => false,
-                'disabled' => $model ? true : false,
+                // 'disabled' => $model ? true : false,
             ]
         );
 
@@ -182,7 +182,7 @@ class Form extends \Magento\Backend\Block\Widget\Form\Generic
                 'title' => __('Created'),
                 'class' => 'required-entry',
                 'required' => true,
-                'disabled' => $model ? true : false,
+                // 'disabled' => $model ? true : false,
             ]
         );
 
@@ -196,7 +196,7 @@ class Form extends \Magento\Backend\Block\Widget\Form\Generic
                 'title' => __('Modified'),
                 'class' => 'required-entry',
                 'required' => true,
-                'disabled' => $model ? true : false,
+                // 'disabled' => $model ? true : false,
             ]
         );
        

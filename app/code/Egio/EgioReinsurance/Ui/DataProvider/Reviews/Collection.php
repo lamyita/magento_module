@@ -17,8 +17,8 @@ class Collection extends SearchResult
      */
     protected function _initSelect()
     {
-        $this->addFilterToMap('reassurance_id', 'main_table.reassurance_id');
-        $this->addFilterToMap('Libelle', 'mdEgioReinsurances.Libelle');
+        // $this->addFilterToMap('reassurance_id', 'main_table.reassurance_id');
+        // $this->addFilterToMap('Libelle', 'mdEgioReinsurances.Libelle');
         parent::_initSelect();
     }
 }
