@@ -65,7 +65,6 @@ class Form extends \Magento\Backend\Block\Widget\Form\Generic
                 'title' => __('Customer Libelle'),
                 'class' => 'required-entry',
                 'required' => true,
-                // 'disabled' => $model ? true : false,
             ]
         );
         $fieldset->addField(
@@ -77,9 +76,11 @@ class Form extends \Magento\Backend\Block\Widget\Form\Generic
                 'title' => __('Description'),
                 'class' => 'required-entry',
                 'required' => true,
-                // 'disabled' => $model ? true : false,
             ]
         );
+
+    
+
         $fieldset->addField(
             'Alt',
             'text',
@@ -88,7 +89,6 @@ class Form extends \Magento\Backend\Block\Widget\Form\Generic
                 'label' => __('Alt'),
                 'title' => __('Alt'),
                 'required' => false,
-                // 'disabled' => $model ? true : false,
             ]
         );
         $fieldset->addField(
@@ -100,22 +100,10 @@ class Form extends \Magento\Backend\Block\Widget\Form\Generic
                 'title' => __('Statut'),
                 'class' => 'required-entry',
                 'required' => true,
-                // 'disabled' => $model ? true : false,
             ]
         );
 
-        // $fieldset->addField(
-        //     'Ordre',
-        //     'select',
-        //     [
-        //         'name' => 'Ordre',
-        //         'label' => __('Ordre'),
-        //         'title' => __('Ordre'),
-        //         'required' => false,
-        //         'disabled' => $model ? true : false,
-        //     ]
-        // );
-
+     
 
         $fieldset->addField(
             'Ordre',
@@ -125,9 +113,7 @@ class Form extends \Magento\Backend\Block\Widget\Form\Generic
                 'label' => __('Ordre'),
                 'id' => 'options',
                 'title' => __('Ordre'),
-                // 'class' => 'required-entry options',
                 'values' => $this->_options->toOptionArray(),
-                // 'required' => true,
             ]
         );
  
@@ -139,7 +125,6 @@ class Form extends \Magento\Backend\Block\Widget\Form\Generic
                 'label' => __('Lien'),
                 'title' => __('Lien'),
                 'required' => false,
-                // 'disabled' => $model ? true : false,
             ]
         );
 
@@ -152,7 +137,6 @@ class Form extends \Magento\Backend\Block\Widget\Form\Generic
                 'title' => __('Title_du_lien'),
                 'class' => 'required-entry',
                 'required' => false,
-                // 'disabled' => $model ? true : false,
             ]
         );
 
@@ -182,7 +166,6 @@ class Form extends \Magento\Backend\Block\Widget\Form\Generic
                 'title' => __('Created'),
                 'class' => 'required-entry',
                 'required' => true,
-                // 'disabled' => $model ? true : false,
             ]
         );
 
@@ -196,10 +179,20 @@ class Form extends \Magento\Backend\Block\Widget\Form\Generic
                 'title' => __('Modified'),
                 'class' => 'required-entry',
                 'required' => true,
-                // 'disabled' => $model ? true : false,
             ]
         );
        
+        // $fieldset->addField(
+        //     'Icone',
+        //     'Icone',
+        //     [
+        //         'name' => 'Icone',
+        //         'label' => __('Icone'),
+        //         'title' => __('Icone'),
+        //         'required'  => false
+        //     ]
+        // );
+        
 
         $form->setValues($model ? $model->getData() : '');
         $form->setUseContainer(true);

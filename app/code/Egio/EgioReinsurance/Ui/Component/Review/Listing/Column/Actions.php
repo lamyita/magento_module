@@ -63,8 +63,8 @@ class Actions extends Column
 
                    $item[$this->getData('name')]['view'] = [
                                     'href' => $this->urlBuilder->getUrl(
-                                        'md_cr/index/view',
-                                        ['id' => $item['reassurance_id'], 'store' => $storeId]
+                                        'md_front/index/index',
+                                        // ['id' => $item['reassurance_id'], 'store' => $storeId]
                                         
                                     ),
                                     'label' => __('view'),
