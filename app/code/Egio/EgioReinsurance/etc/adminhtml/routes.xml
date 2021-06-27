@@ -1,8 +1,13 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    
+    <!-- ///The parent route for admin routes needs to be "admin".  -->
     <router id="admin">
         <route id="md_cr" frontName="md_cr">
+        <!-- Magento provide the attribute before/after to config the module sort order which define what module controller will be find first -->
             <module name="Egio_EgioReinsurance" before="Magento_Backend" />
         </route>
     </router>
+
+
 </config>

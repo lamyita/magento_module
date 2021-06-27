@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+  
+      <!-- ///The parent route for admin routes needs to be "standard".  -->
+
+    <router id="standard">
+        <route id="md_front" frontName="md_front">
+            <module name="Egio_EgioReinsurance" />
+        </route>
+    </router>
+</config>
