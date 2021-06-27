@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <!-- <update handle="md_cr_index_view"/>
+    <body/> -->
+<!-- 
+    <referenceContainer name="content">
+        <block class="Egio\EgioReinsurance\Block\Adminhtml\Reviews\View" name="md_cr_index_new_view" uiComponent="Egio_EgioReinsurance::index.phtml" />
+    </referenceContainer>
+
+
+    <referenceContainer name="content">
+            <uiComponent name="Egio_EgioReinsurance::index.phtml"/>
+        </referenceContainer> -->
+
+
+         <body>
+        <referenceContainer name="content">
+            <block class="Egio\EgioReinsurance\Block\Adminhtml\Reviews\View" name="md_cr_index_new_view" uiComponent="Egio_EgioReinsurance::index.phtml" />
+        </referenceContainer>
+    </body>
+
+</page>
