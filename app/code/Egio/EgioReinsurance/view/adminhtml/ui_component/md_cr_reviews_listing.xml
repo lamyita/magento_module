@@ -182,7 +182,17 @@
             </settings>
         </column>
 
-        
+         <column name="Icone" >
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="component" xsi:type="string">Magento_Ui/js/grid/columns/thumbnail</item>
+                    <item name="sortable" xsi:type="boolean">false</item>
+                    <item name="has_preview" xsi:type="string">1</item>                    
+                    <item name="label" xsi:type="string" translate="true">Icone</item>
+                </item>
+            </argument>
+        </column>
+
         <actionsColumn name="actions" class="Egio\EgioReinsurance\Ui\Component\Review\Listing\Column\Actions" sortOrder="200">
             <settings>
                 <indexField>reassurance_id</indexField>
