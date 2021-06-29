@@ -2,17 +2,17 @@
         xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
         <table name="md_reinsurance">
             <column xsi:type="int" name="reassurance_id" padding="10" unsigned="true" identity="true" nullable="false" comment="reassurance ID"/>
-            <column xsi:type="varchar" name="Libelle" nullable="false" length="60" comment="Un naming destiné à être utilisé uniquement en backoffice "/>
-            <column xsi:type="varchar" name="Description" nullable="false" length="255" comment="Micro-description (ex paiement sécurisé"/>
-            <column xsi:type="varchar" name="Icone" nullable="true"  comment="Icone de la garantie"/>
-            <column xsi:type="varchar" name="Alt" nullable="true" length="100" comment="Texte alt icone"/>
-            <column xsi:type="boolean" name="Statut" nullable="false"  comment="Permet de publier ou non l’élément"/>
-            <column xsi:type="int" name="Ordre" nullable="false" ength="250"  comment="Permet de contrôler la position de l’élément"/>
-            <column xsi:type="varchar" name="Lien" nullable="false" length="250" comment="Lien vers une page interne ou externet"/>
-            <column xsi:type="varchar" name="Title_du_lien" nullable="false" length="250" />
-             <column xsi:type="boolean" name="Nouvelle_fenêtre" nullable="false"  />
-            <column xsi:type="timestamp" name="Created" nullable="false"  comment="Creation Time"/>
-            <column xsi:type="timestamp" name="Modified" nullable="false"  comment="Modification Time"/>
+            <column xsi:type="varchar" name="libelle" nullable="false" length="60" comment="Un naming destiné à être utilisé uniquement en backoffice "/>
+            <column xsi:type="varchar" name="description" nullable="false" length="255" comment="Micro-description (ex paiement sécurisé"/>
+            <column xsi:type="varchar" name="icone" nullable="true"  comment="Icone de la garantie"/>
+            <column xsi:type="varchar" name="alt" nullable="true" length="100" comment="Texte alt icone"/>
+            <column xsi:type="boolean" name="statut" nullable="false"  comment="Permet de publier ou non l’élément"/>
+            <column xsi:type="int" name="ordre" nullable="false" ength="250"  comment="Permet de contrôler la position de l’élément"/>
+            <column xsi:type="varchar" name="lien" nullable="false" length="250" comment="Lien vers une page interne ou externet"/>
+            <column xsi:type="varchar" name="title_du_lien" nullable="false" length="250" />
+             <column xsi:type="boolean" name="nouvelle_fenêtre" nullable="false"  />
+            <column xsi:type="timestamp" name="created" nullable="false"  comment="Creation Time"/>
+            <column xsi:type="timestamp" name="modified" nullable="false"  comment="Modification Time"/>
 
 
             <!-- <column xsi:type="smallint" name="options" padding="5" unsigned="true" nullable="true" identity="false"

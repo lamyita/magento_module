@@ -2,6 +2,11 @@
 
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
+
+    <!-- Il connait les informations à afficher pour notre action grâces aux directives
+     contenues dans ce fichier de layout. Ici on lui dit d'aller afficher notre bloc utilisant 
+     la classe Egio\EgioReinsurance\Block\Index pour la partie "logique" 
+     et le template fay_Contacts::test_index.phtml c'est à dire Egio_EgioReinsurance::index.phtml pour la partie "affichage". -->
         <referenceContainer name="content">
             <block class="Egio\EgioReinsurance\Block\Index" name="md_front_index_index" template="Egio_EgioReinsurance::index.phtml">
             </block>

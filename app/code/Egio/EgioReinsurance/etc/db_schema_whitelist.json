@@ -2,17 +2,17 @@
     "md_reinsurance": {
         "column": {
             "reassurance_id": true,
-            "Libelle": true,
-            "Description": true,
-            "Icone": true,
-            "Alt": true,
-            "Statut": true,
-            "Ordre": true,
-            "Lien": true,
-            "Title_du_lien": true,
-            "Nouvelle_fenêtre": true,
-            "Created": true,
-            "Modified": true
+            "libelle": true,
+            "description": true,
+            "icone": true,
+            "alt": true,
+            "statut": true,
+            "ordre": true,
+            "lien": true,
+            "title_du_lien": true,
+            "nouvelle_fenêtre": true,
+            "created": true,
+            "modified": true
 
 
 

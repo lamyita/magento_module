@@ -33,7 +33,7 @@ class Save extends \Magento\Backend\App\Action
     public function execute()
     {
         $data = $this->getRequest()->getPostValue();
-        $reviewId = isset($data['entity_id']) ? $data['entity_id'] : '';
+        $reviewId = isset($data['reassurance_id']) ? $data['reassurance_id'] : '';
         if (!$data) {
             $this->_redirect('md_cr/index/index');
         }

@@ -93,18 +93,18 @@
                 <resizeDefaultWidth>25</resizeDefaultWidth>
             </settings>
         </column>
-        <column name="Libelle">
+        <column name="libelle">
             <settings>
                 <filter>text</filter>
                 <bodyTmpl>ui/grid/cells/text</bodyTmpl>
-                <label translate="true">Libelle</label>
+                <label translate="true">libelle</label>
             </settings>
         </column>
-        <column name="Description">
+        <column name="description">
             <settings>
                 <filter>text</filter>
                 <bodyTmpl>ui/grid/cells/text</bodyTmpl>
-                <label translate="true">Description</label>
+                <label translate="true">description</label>
             </settings>
         </column>
 
@@ -116,21 +116,21 @@
             </settings>
           </column>  -->
         
-         <column name="Alt">
+         <column name="alt">
             <settings>
                 <filter>text</filter>
                 <bodyTmpl>ui/grid/cells/text</bodyTmpl>
                 <label translate="true">Alt</label>
             </settings>
         </column> 
-        <column name="Statut">
+        <column name="statut">
             <settings>
                 <filter>text</filter>
                 <bodyTmpl>ui/grid/cells/text</bodyTmpl>
                 <label translate="true">Statut</label>
             </settings>
         </column>
-          <column name="Ordre">
+          <column name="ordre">
             <settings>
                 <filter>select</filter>
                 <dataType>select</dataType>
@@ -140,14 +140,14 @@
         </column> 
 
         
-         <column name="Lien">
+         <column name="lien">
             <settings>
                 <filter>text</filter>
                 <bodyTmpl>ui/grid/cells/text</bodyTmpl>
                 <label translate="true">Lien</label>
             </settings>
           </column> 
-          <column name="Title_du_lien">
+          <column name="title_du_lien">
             <settings>
                 <filter>text</filter>
                 <bodyTmpl>ui/grid/cells/text</bodyTmpl>
@@ -157,7 +157,7 @@
 
 
 
-         <column name="Nouvelle_fenêtre">
+         <column name="nouvelle_fenêtre">
             <settings>
                 <filter>select</filter>
                 <dataType>select</dataType>
@@ -167,14 +167,14 @@
         </column>  
 
 
-         <column name="Created">
+         <column name="created">
             <settings>
                 <filter>text</filter>
                 <bodyTmpl>ui/grid/cells/text</bodyTmpl>
                 <label translate="true">Created</label>
             </settings>
         </column>
-         <column name="Modified">
+         <column name="modified">
             <settings>
                 <filter>text</filter>
                 <bodyTmpl>ui/grid/cells/text</bodyTmpl>
@@ -182,7 +182,7 @@
             </settings>
         </column>
 
-         <column name="Icone" >
+         <column name="icone" >
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
                     <item name="component" xsi:type="string">Magento_Ui/js/grid/columns/thumbnail</item>

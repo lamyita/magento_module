@@ -57,23 +57,23 @@ class Form extends \Magento\Backend\Block\Widget\Form\Generic
             $fieldset = $form->addFieldset('base_fieldset', ['legend' => __('reinsurance Details'), 'class' => 'fieldset-wide']);
         }
         $fieldset->addField(
-            'Libelle',
+            'libelle',
             'text',
             [
-                'name' => 'Libelle',
-                'label' => __('Libelle'),
+                'name' => 'libelle',
+                'label' => __('libelle'),
                 'title' => __('Customer Libelle'),
                 'class' => 'required-entry',
                 'required' => true,
             ]
         );
         $fieldset->addField(
-            'Description',
+            'description',
             'text',
             [
-                'name' => 'Description',
-                'label' => __('Description'),
-                'title' => __('Description'),
+                'name' => 'description',
+                'label' => __('description'),
+                'title' => __('description'),
                 'class' => 'required-entry',
                 'required' => true,
             ]
@@ -82,22 +82,22 @@ class Form extends \Magento\Backend\Block\Widget\Form\Generic
     
 
         $fieldset->addField(
-            'Alt',
+            'alt',
             'text',
             [
-                'name' => 'Alt',
-                'label' => __('Alt'),
-                'title' => __('Alt'),
+                'name' => 'alt',
+                'label' => __('alt'),
+                'title' => __('alt'),
                 'required' => false,
             ]
         );
         $fieldset->addField(
-            'Statut',
+            'statut',
             'text',
             [
-                'name' => 'Statut',
-                'label' => __('Statut'),
-                'title' => __('Statut'),
+                'name' => 'statut',
+                'label' => __('statut'),
+                'title' => __('statut'),
                 'class' => 'required-entry',
                 'required' => true,
             ]
@@ -106,11 +106,11 @@ class Form extends \Magento\Backend\Block\Widget\Form\Generic
      
 
         $fieldset->addField(
-            'Ordre',
+            'ordre',
             'select',
             [
-                'name' => 'Ordre',
-                'label' => __('Ordre'),
+                'name' => 'ordre',
+                'label' => __('ordre'),
                 'id' => 'options',
                 'title' => __('Ordre'),
                 'values' => $this->_options->toOptionArray(),
@@ -118,23 +118,23 @@ class Form extends \Magento\Backend\Block\Widget\Form\Generic
         );
  
         $fieldset->addField(
-            'Lien',
+            'lien',
             'text',
             [
-                'name' => 'Lien',
-                'label' => __('Lien'),
-                'title' => __('Lien'),
+                'name' => 'lien',
+                'label' => __('lien'),
+                'title' => __('lien'),
                 'required' => false,
             ]
         );
 
         $fieldset->addField(
-            'Title_du_lien',
+            'title_du_lien',
             'text',
             [
-                'name' => 'Title_du_lien',
-                'label' => __('Title_du_lien'),
-                'title' => __('Title_du_lien'),
+                'name' => 'title_du_lien',
+                'label' => __('title_du_lien'),
+                'title' => __('title_du_lien'),
                 'class' => 'required-entry',
                 'required' => false,
             ]
@@ -143,11 +143,11 @@ class Form extends \Magento\Backend\Block\Widget\Form\Generic
       
 
         $fieldset->addField(
-            'Nouvelle_fenêtre',
+            'nouvelle_fenêtre',
             'select',
             [
-                'name' => 'Nouvelle_fenêtre',
-                'label' => __('Nouvelle_fenêtre'),
+                'name' => 'nouvelle_fenêtre',
+                'label' => __('nouvelle_fenêtre'),
                 'id' => 'options',
                 'title' => __('options'),
                 // 'class' => 'required-entry options',
@@ -158,40 +158,41 @@ class Form extends \Magento\Backend\Block\Widget\Form\Generic
  
 
         $fieldset->addField(
-            'Created',
+            'created',
             'text',
             [
-                'name' => 'Created',
-                'label' => __('Created'),
-                'title' => __('Created'),
+                'name' => 'created',
+                'label' => __('created'),
+                'title' => __('created'),
                 'class' => 'required-entry',
                 'required' => true,
             ]
+
         );
 
 
         $fieldset->addField(
-            'Modified',
+            'modified',
             'text',
             [
-                'name' => 'Modified',
-                'label' => __('Modified'),
-                'title' => __('Modified'),
+                'name' => 'modified',
+                'label' => __('modified'),
+                'title' => __('modified'),
                 'class' => 'required-entry',
                 'required' => true,
             ]
         );
        
-        // $fieldset->addField(
-        //     'Icone',
-        //     'Icone',
-        //     [
-        //         'name' => 'Icone',
-        //         'label' => __('Icone'),
-        //         'title' => __('Icone'),
-        //         'required'  => false
-        //     ]
-        // );
+        $fieldset->addField(
+            'icone',
+            'image',
+            [
+                'name' => 'icone',
+                'label' => __('icone'),
+                'title' => __('icone'),
+                'required'  => false
+            ]
+        );
         
 
         $form->setValues($model ? $model->getData() : '');
