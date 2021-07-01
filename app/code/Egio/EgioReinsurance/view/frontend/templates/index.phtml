@@ -9,18 +9,19 @@ $reviews = $this->getReviews();
     <table>
         <tr>
         <th>id</th>
-            <th>liiib</th>
             <th>desc</th>
             <th>ttss</th>
-            <th>hff</th>
+            <th>Icone</th>
+
+            
         </tr>
         <?php foreach ($reviews as $review): ?>
             <tr>
             <td><?php echo $review->getReassurance_id(); ?></td>
-                <td><?php echo $review->getLibelle(); ?></td>
                 <td><?php echo $review->getDescription(); ?></td>
-                <td><?php echo $review->getAlt(); ?></td>
-                <td>dd</td>
+                <td><?php echo $review->getIcone(); ?></td>
+
+
 
             </tr>
 

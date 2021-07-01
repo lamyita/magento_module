@@ -1,0 +1,47 @@
+langage : PHP, Java/JEE, HTML, CSS, Js, Botstrap, Sass, JSP, JSTL
+Desktop : JavaFX, Java Swing
+Framworks : Angular 2+, Hibernate/JPA, Spring MVC, Spring Boot
+CMS : Wordpress
+SGBD : MySQL, PostgreSQL
+Workflwo : Git, Github, Jira, Trelo
+Devops : Docker, Jenkins, 
+Divers : Programmation Orientée objet, Test Unitaire JUNIT, Microservice, API Rest, JWT
+
+AVRIL 2021 : YouCode –Youssoufia
+Création d'une application web Réservation : springMVC 
+et hibernate
+
+
+
+Gestion de réservation 
+une application Web qui permet la gestion d'accès des apprenants à l'ecole YouCode 
+Technologies: SPRING MVC/JSP/CSS/BOOTSTRAP/JAVASCRIPT...
+
+Application Web Java EE Gestion des produit de pharmacie
+une application web Java EE afin qu’il puisse optimiser le temps de recherche et la gestion
+
+une application Web qui va faire un mini management des articles de pharmacie
+
+Technologies: JAVA JEE/PostgreSQL/ Bootstrap/JSP
+
+
+Gestion d’absence
+
+une application desktop qui permet la gestion des absences des apprenants dans l'ecole YouCode
+Technologies:JavaFX
+
+
+
+
+
+
+Gestion de réservation : 
+Une application Web qui permet la gestion d'accès des apprenants à l'école Youcode 
+Technologies : SPRING MVC/JSP/CSS/BOOTSTRAP/JAVASCRIPT...
+
+Gestion d’absence :
+Une application desktop qui permet la gestion des absences des apprenants dans l'école Youcode
+Technologies : JavaFX
+Gestion des produits de pharmacie :
+Une application Web qui permet la gestion des produit d’une pharmacie 
+Technologies : JAVA JEE/PostgreSQL/ Bootstrap/JSP

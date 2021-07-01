@@ -56,6 +56,7 @@ class Form extends \Magento\Backend\Block\Widget\Form\Generic
         } else {
             $fieldset = $form->addFieldset('base_fieldset', ['legend' => __('reinsurance Details'), 'class' => 'fieldset-wide']);
         }
+        
         $fieldset->addField(
             'libelle',
             'text',
@@ -190,7 +191,8 @@ class Form extends \Magento\Backend\Block\Widget\Form\Generic
                 'name' => 'icone',
                 'label' => __('icone'),
                 'title' => __('icone'),
-                'required'  => false
+                'required'  => false,
+                // 'note' => 'Allow image type: jpg, svg, png',
             ]
         );
         
