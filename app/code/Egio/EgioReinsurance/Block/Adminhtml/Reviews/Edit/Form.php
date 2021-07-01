@@ -56,7 +56,6 @@ class Form extends \Magento\Backend\Block\Widget\Form\Generic
         } else {
             $fieldset = $form->addFieldset('base_fieldset', ['legend' => __('reinsurance Details'), 'class' => 'fieldset-wide']);
         }
-        
         $fieldset->addField(
             'libelle',
             'text',
@@ -160,10 +159,11 @@ class Form extends \Magento\Backend\Block\Widget\Form\Generic
 
         $fieldset->addField(
             'created',
-            'text',
+            'date',
             [
-                'name' => 'created',
-                'label' => __('created'),
+              'label' => __('created'),
+                'date_format' => 'yyyy-MM-dd',
+                'time_format' => 'hh:mm:ss',
                 'title' => __('created'),
                 'class' => 'required-entry',
                 'required' => true,
@@ -174,9 +174,11 @@ class Form extends \Magento\Backend\Block\Widget\Form\Generic
 
         $fieldset->addField(
             'modified',
-            'text',
+            'date',
             [
                 'name' => 'modified',
+                'date_format' => 'yyyy-MM-dd',
+                'time_format' => 'hh:mm:ss',
                 'label' => __('modified'),
                 'title' => __('modified'),
                 'class' => 'required-entry',

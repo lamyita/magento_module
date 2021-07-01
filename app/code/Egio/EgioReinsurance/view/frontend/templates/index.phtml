@@ -4,37 +4,47 @@ $reviews = $this->getReviews();
 
 
 ?>
-<div >
   
-    <table>
-        <tr>
-        <th>id</th>
-            <th>desc</th>
-            <th>ttss</th>
-            <th>Icone</th>
-
-            
-        </tr>
-        <?php foreach ($reviews as $review): ?>
-            <tr>
-            <td><?php echo $review->getReassurance_id(); ?></td>
-                <td><?php echo $review->getDescription(); ?></td>
-                <td><?php echo $review->getIcone(); ?></td>
 
 
-
-            </tr>
-
-        <?php endforeach; ?>
-    
- 
+<!-- // var_dump($block->getgetHello()->getData()); -->
 
 
-    </table>
+<?php
+$reviews = $this->getReviews();
 
+
+?>
+  
+  
+
+    <?php foreach ($reviews as $review): ?>
+    <div>
+     <div class="sectionOne">
+             <div>
+             <h6><?php echo $review->getTitle_du_lien();?></h6>
+                 <p maxlength="100"><?php echo $review->getDescription(); ?></p>
+        
+                <p><a href="<?php echo $review->getLien(); ?>">link</a></p>
+             </div>
+
+            <div>
+                <img src="<?= $review->getIcone(); ?>" alt="<?= $review->getAlt(); ?>" width="100%" width="40px" height="40px"/>
+            </div> 
    
-</div>
+                <!-- <img src="{{media url='../../../../../images/test.png ?>" /> -->
+       </div>
 
+       <div class="sectionTwo">
+       <!-- <img src="{{view url="/EgioReinsurance/images/test.png"}}" /> -->
+
+       </div>
+      
+   
+    </div>
+
+
+<?php endforeach; ?>
 
 <!-- // var_dump($block->getgetHello()->getData()); -->
 
