@@ -10,7 +10,7 @@
             <column xsi:type="int" name="ordre" nullable="false" ength="250"  comment="Permet de contrôler la position de l’élément"/>
             <column xsi:type="varchar" name="lien" nullable="false" length="250" comment="Lien vers une page interne ou externet"/>
             <column xsi:type="varchar" name="title_du_lien" nullable="false" length="250" />
-             <column xsi:type="boolean" name="nouvelle_fenêtre" nullable="false"  />
+            <column xsi:type="boolean" name="nouvelle_fenêtre" nullable="false"  />
             <column xsi:type="timestamp" name="created" nullable="false"  comment="Creation Time"/>
             <column xsi:type="timestamp" name="modified" nullable="false"  comment="Modification Time"/>
 

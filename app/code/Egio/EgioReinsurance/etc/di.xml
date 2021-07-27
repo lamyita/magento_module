@@ -4,6 +4,8 @@
         <arguments>
             <argument name="collections" xsi:type="array">
                 <item name="md_cr_reviews_listing_data_source" xsi:type="string">MdEgioReinsuranceCollection</item>
+                <!-- <item name="md_cr_reviews_form_data_source" xsi:type="string">MdEgioReinsuranceCollection</item> -->
+
             </argument>
         </arguments>
     </type>
@@ -13,4 +15,26 @@
             <argument name="resourceModel" xsi:type="string">Egio\EgioReinsurance\Model\ResourceModel\Reviews</argument>
         </arguments>
     </virtualType>
+
+
+            <virtualType name="Egio\EgioReinsurance\ReferenceImageUpload" type="Egio\EgioReinsurance\Model\ImageUploader">
+            <arguments>
+                <argument name="baseTmpPath" xsi:type="string">egio/tmp/index</argument>
+                <argument name="basePath" xsi:type="string">egio/index</argument>
+                <argument name="allowedExtensions" xsi:type="array">
+                    <item name="jpg" xsi:type="string">jpg</item>
+                    <item name="png" xsi:type="string">png</item>
+                </argument>
+                <argument name="allowedMimeTypes" xsi:type="array">
+                    <item name="jpg" xsi:type="string">icone/jpg</item>
+                    <item name="png" xsi:type="string">icone/png</item>
+                </argument> 
+            </arguments>
+        </virtualType>
+        
+        <type name="Egio\EgioReinsurance\Controller\Adminhtml\Index\Upload">
+            <arguments>
+                <argument name="imageUploader" xsi:type="object">Egio\EgioReinsurance\ReferenceImageUpload</argument>
+            </arguments>
+        </type>
 </config>

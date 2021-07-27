@@ -166,14 +166,6 @@
             </settings>
         </column>  
 
-
-         <!-- <column name="created">
-            <settings>
-                <filter>text</filter>
-                <bodyTmpl>ui/grid/cells/text</bodyTmpl>
-                <label translate="true">Created</label>
-            </settings>
-        </column> -->
         <column name="created" class="Magento\Ui\Component\Listing\Columns\Date">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
@@ -195,20 +187,13 @@
                     <item name="filter" xsi:type="string">dateRange</item>
                     <item name="component" xsi:type="string">Magento_Ui/js/grid/columns/date</item>
                     <item name="dataType" xsi:type="string">date</item>
-                    <item name="label" xsi:type="string" translate="true">created</item>
+                    <item name="label" xsi:type="string" translate="true">modified</item>
                     <item name="dateFormat" xsi:type="string">YYYY-MM-dd</item>
                     <item name="inputDateFormat" xsi:type="string">YYYY-MM-dd</item>
                     <item name="outputDateFormat" xsi:type="string">YYYY-MM-dd</item>
                 </item>
             </argument>
         </column>
-         <!-- <column name="modified">
-            <settings>
-                <filter>text</filter>
-                <bodyTmpl>ui/grid/cells/text</bodyTmpl>
-                <label translate="true">Modified</label>
-            </settings>
-        </column> -->
 
          <column name="icone" >
             <argument name="data" xsi:type="array">
@@ -219,6 +204,7 @@
                     <item name="label" xsi:type="string" translate="true">Icone</item>
                 </item>
             </argument>
+
         </column>
 
         <actionsColumn name="actions" class="Egio\EgioReinsurance\Ui\Component\Review\Listing\Column\Actions" sortOrder="200">

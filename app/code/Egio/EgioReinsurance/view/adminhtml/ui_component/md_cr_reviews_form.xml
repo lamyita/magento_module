@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <argument name="data" xsi:type="array">
+        <item name="js_config" xsi:type="array">
+            <item name="provider" xsi:type="string">md_cr_reviews_form.md_cr_reviews_form_data_source</item>
+            <item name="deps" xsi:type="string">md_cr_reviews_form.md_cr_reviews_form_data_source</item>
+        </item>
+        <item name="label" xsi:type="string" translate="true"> Sample Form</item>
+        <item name="layout" xsi:type="array">
+            <item name="type" xsi:type="string">tabs</item>
+        </item>
+    </argument>
+
+        <settings>
+        <buttons>
+            <button name="save" class="Egio\EgioReinsurance\Block\Adminhtml\Reviews\Edit\SaveButton"/>
+            <button name="back" class="Egio\EgioReinsurance\Block\Adminhtml\Reviews\Edit\BackButton"/>
+        </buttons>
+        <namespace>md_cr_reviews_form</namespace>
+        <dataScope>data</dataScope>
+        <deps>
+            <dep>md_cr_reviews_form.md_cr_reviews_form_data_source</dep>
+        </deps>
+    </settings>
+
+        
+
+    <dataSource name="md_cr_reviews_form_data_source">
+    <argument name="data" xsi:type="array">
+            <item name="js_config" xsi:type="array">
+                <item name="component" xsi:type="string">Magento_Ui/js/form/provider</item>
+            </item>
+        </argument>
+        <settings>
+            <submitUrl path="md_cr/index/save"/>
+        </settings>
+        <dataProvider class="Egio\EgioReinsurance\Model\ResourceModel\Reviews\DataProvider" name="md_cr_reviews_form_data_source">
+            <settings>
+                <primaryFieldName>reassurance_id</primaryFieldName>
+                <requestFieldName>id</requestFieldName>
+
+            </settings>
+        </dataProvider>
+      
+
+    </dataSource>
+
+    <fieldset name="reviews">
+       <settings>
+            <label/>
+        </settings>
+        <field name="reassurance_id" formElement="input">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="source" xsi:type="string">reviews</item>
+                </item>
+            </argument>
+            <settings>
+                <dataType>text</dataType>
+                <visible>false</visible>
+                <dataScope>reassurance_id</dataScope>
+            </settings>
+        </field>
+
+        <field name="libelle" sortOrder="20" formElement="input">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="source" xsi:type="string">block</item>
+                </item>
+            </argument>
+            <settings>
+                <validation>
+                    <rule name="required-entry" xsi:type="boolean">true</rule>
+                </validation>
+                <dataType>text</dataType>
+                <label translate="true"> libelle</label>
+                <dataScope>libelle</dataScope>
+            </settings>
+        </field>
+        <!-- This field has data type 'text' and standard 'input' form element and looks like input -->
+        <!-- <field name="libelle">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="label" xsi:type="string">Libelle</item>
+                    <item name="visible" xsi:type="boolean">true</item>
+                    <item name="dataType" xsi:type="string">text</item>
+                    <item name="formElement" xsi:type="string">input</item>
+                    <item name="source" xsi:type="string">reviews</item>
+                </item>
+              
+            </argument>
+        </field> -->
+
+
+        <!-- This field has data type 'text' and standard 'input' form element and looks like input -->
+         <field name="description">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="label" xsi:type="string">description</item>
+                    <item name="visible" xsi:type="boolean">true</item>
+                    <item name="dataType" xsi:type="string">text</item>
+                    <item name="formElement" xsi:type="string">input</item>
+                    <item name="source" xsi:type="string">description</item>
+                </item>
+            </argument>
+             <settings>
+                <validation>
+                    <rule name="required-entry" xsi:type="boolean">true</rule>
+                </validation>
+                <dataType>text</dataType>
+                <label translate="true"> description</label>
+                <dataScope>description</dataScope>
+            </settings>
+        </field>
+        
+    
+       <!-- This field has data type 'text' and standard 'input' form element and looks like input -->
+        <field name="alt">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="label" xsi:type="string">alt</item>
+                    <item name="visible" xsi:type="boolean">true</item>
+                    <item name="dataType" xsi:type="string">text</item>
+                    <item name="formElement" xsi:type="string">input</item>
+                    <item name="source" xsi:type="string">alt</item>
+                </item>
+            </argument>
+            
+        </field>
+
+
+        <field name="statut" formElement="select">
+            <settings>
+                <dataType>text</dataType>
+                <label translate="true">Statut</label>
+                <dataScope>statut</dataScope>
+            </settings>
+            <formElements>
+                <select>
+                    <settings>
+                        <options>
+                            <option name="1" xsi:type="array">
+                                <item name="value" xsi:type="string">1</item>
+                                <item name="label" xsi:type="string">Yes</item>
+                            </option>
+                            <option name="2" xsi:type="array">
+                                <item name="value" xsi:type="string">2</item>
+                                <item name="label" xsi:type="string">No</item>
+                            </option>
+                           </options>
+                        <caption translate="true">-- Please Select --</caption>
+                    </settings>
+                </select>
+            </formElements>
+        </field>
+
+
+           <!-- This field has data type 'text' and standard 'input' form element and looks like input -->
+        <field name="ordre">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="label" xsi:type="string">ordre</item>
+                    <item name="visible" xsi:type="boolean">true</item>
+                    <item name="dataType" xsi:type="string">text</item>
+                    <item name="formElement" xsi:type="string">input</item>
+                    <item name="source" xsi:type="string">ordre</item>
+                </item>
+            </argument>
+             <settings>
+                <validation>
+                    <rule name="required-entry" xsi:type="boolean">true</rule>
+                </validation>
+                <dataType>text</dataType>
+                <label translate="true"> ordre</label>
+                <dataScope>ordre</dataScope>
+            </settings>
+        </field>
+
+        <field name="lien">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="label" xsi:type="string">lien</item>
+                    <item name="visible" xsi:type="boolean">true</item>
+                    <item name="dataType" xsi:type="string">text</item>
+                    <item name="formElement" xsi:type="string">input</item>
+                    <item name="source" xsi:type="string">lien</item>
+                </item>
+            </argument>
+        </field>
+
+
+        <field name="title_du_lien">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="label" xsi:type="string">title du lien</item>
+                    <item name="visible" xsi:type="boolean">true</item>
+                    <item name="dataType" xsi:type="string">text</item>
+                    <item name="formElement" xsi:type="string">input</item>
+                    <item name="source" xsi:type="string">title_du_lien</item>
+                </item>
+            </argument>
+        </field>
+
+
+          <field name="nouvelle_fenêtre" formElement="select">
+            <settings>
+                <dataType>text</dataType>
+                <label translate="true">nouvelle_fenêtre</label>
+                <dataScope>nouvelle_fenêtre</dataScope>
+            </settings>
+            <formElements>
+                <select>
+                    <settings>
+                        <options>
+                            <option name="1" xsi:type="array">
+                                <item name="value" xsi:type="string">1</item>
+                                <item name="label" xsi:type="string">Yes</item>
+                            </option>
+                            <option name="2" xsi:type="array">
+                                <item name="value" xsi:type="string">2</item>
+                                <item name="label" xsi:type="string">No</item>
+                            </option>
+                           </options>
+                        <caption translate="true">-- Please Select --</caption>
+                    </settings>
+                </select>
+            </formElements>
+        </field>
+
+
+        <field name="created" formElement="date">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="source" xsi:type="string">created</item>
+                </item>
+            </argument>
+            <settings>
+                <validation>
+                    <rule name="validate-date" xsi:type="boolean">true</rule>
+                </validation>
+                <dataType>text</dataType>
+                <label translate="true">Created</label>
+                <visible>true</visible>
+                <dataScope>created</dataScope>
+            </settings>
+        </field>
+
+         <field name="modified" formElement="date">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="source" xsi:type="string">modified</item>
+                </item>
+            </argument>
+            <settings>
+                <validation>
+                    <rule name="validate-date" xsi:type="boolean">true</rule>
+                </validation>
+                <dataType>text</dataType>
+                <label translate="true">modified</label>
+                <visible>true</visible>
+                <dataScope>modified</dataScope>
+            </settings>
+        </field>
+
+        <!-- <field name="modified" formElement="date">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="source" xsi:type="string">modified</item>
+                </item>
+            </argument>
+            <settings>
+                <validation>
+                    <rule name="validate-date" xsi:type="boolean">true</rule>
+                </validation>
+                <dataType>text</dataType>
+                <label translate="true">Modified</label>
+                <visible>true</visible>
+                <dataScope>some_scope</dataScope>
+            </settings>
+        </field> -->
+
+     <field formElement="imageUploader" name="icone" sortOrder="40" >
+                <argument name="data" xsi:type="array">
+            <item name="config" xsi:type="array">
+                <item name="source" xsi:type="string">Demo</item>
+            </item>
+            </argument>
+            <settings>
+            <elementTmpl>ui/form/element/uploader/image</elementTmpl>
+            <dataType>string</dataType>
+            <label translate="true">icone</label>
+            <visible>true</visible>
+            <!-- <validation>
+                <rule name="required-entry" xsi:type="boolean">true</rule>
+            </validation> -->
+            </settings>
+         <formElements>
+            <imageUploader>
+                <settings>
+                    <required>true</required>
+                    <uploaderConfig>
+                        <param xsi:type="url" name="url" path="md_cr/index_image/upload"/>
+                    </uploaderConfig>
+                    <previewTmpl>Egio_EgioReinsurance/image-preview</previewTmpl>
+                    <openDialogTitle>Media Gallery</openDialogTitle>
+                    <allowedExtensions>jpg png</allowedExtensions>
+                    <maxFileSize>4194304</maxFileSize>
+                </settings>
+            </imageUploader>
+        </formElements>
+    </field>
+
+    </fieldset>
+</form>
