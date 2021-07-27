@@ -25,20 +25,17 @@ $reviews = $this->getReviews();
              <h6><?php echo $review->getTitle_du_lien();?></h6>
                  <p maxlength="100"><?php echo $review->getDescription(); ?></p>
         
-                <p><a href="<?php echo $review->getLien(); ?>">link</a></p>
+                <p><a href="<?php echo $review->getLien(); ?>"><?php echo $review->getTitle_du_lien();?></a></p>
              </div>
 
             <div>
-                <img src="<?= $review->getIcone(); ?>" alt="<?= $review->getAlt(); ?>" width="100%" width="40px" height="40px"/>
+                <!-- <img src="<?= $review->getIcone(); ?>" alt="<?= $review->getAlt(); ?>" width="100%" width="40px" height="40px"/> -->
             </div> 
    
-                <!-- <img src="{{media url='../../../../../images/test.png ?>" /> -->
+                
        </div>
 
-       <div class="sectionTwo">
-       <!-- <img src="{{view url="/EgioReinsurance/images/test.png"}}" /> -->
-
-       </div>
+      
       
    
     </div>
@@ -48,3 +45,14 @@ $reviews = $this->getReviews();
 
 <!-- // var_dump($block->getgetHello()->getData()); -->
 
+<h1><?php $reviews = $this->getReviews(); ?></h1>
+
+
+<?php 
+    foreach($reviews as $review){
+        echo $review->getImage();
+        $path = $this->getMediaUrl().'homeslider/'.$review->getImage();
+        $img = '<img src='.$path. '/ >';
+        echo $img;
+    }
+?>  
